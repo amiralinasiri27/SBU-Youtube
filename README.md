@@ -4,8 +4,7 @@
 This is the final project of our [**Advanced Programming**](https://github.com/orgs/Advanced-Programming-1402/repositories) course in Shahid Beheshti University. It's a clone of the famous video-streaming application **Youtube** designed using **Java** programming language.<br>
 From [here](), you can acces the project documentation as well.
 
-## Images
-![spotify](https://github.com/Farid-Karimi/Lyrik/assets/118434072/5976e739-3077-42fb-8ce2-43e7f80b1181)
+
 
 ## Objectives
 Here is a list of concepts which where used through out the project:
