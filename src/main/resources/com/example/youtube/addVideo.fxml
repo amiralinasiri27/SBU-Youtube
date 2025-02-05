@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainField" prefHeight="610.0" prefWidth="863.0" styleClass="backGrounds" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.youtube.addVideoController">
+   <children>
+      <MediaView fx:id="mediaView" fitHeight="400.0" fitWidth="600.0" layoutX="215.0" layoutY="34.0" onMouseClicked="#mediaViewClickToHidePlayBtn" />
+      <Slider fx:id="timeSlider" layoutX="215.0" layoutY="434.0" prefHeight="18.0" prefWidth="600.0" showTickMarks="true" />
+      <Button layoutX="14.0" layoutY="34.0" mnemonicParsing="false" onAction="#openSongMedia" prefHeight="41.0" prefWidth="135.0" styleClass="otherBtns" text="openVideo">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <ImageView fx:id="platImg" fitHeight="41.0" fitWidth="52.0" layoutX="494.0" layoutY="214.0" onMouseClicked="#play" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/icons8-play-50.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pauseImg" fitHeight="41.0" fitWidth="41.0" layoutX="494.0" layoutY="213.0" onMouseClicked="#play" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@Images/icons8-pause-50.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="311.0" layoutY="458.0" onMouseClicked="#nextBtnClick" prefHeight="33.0" prefWidth="116.0" styleClass="labels" text="15 second &gt;" />
+      <Label layoutX="215.0" layoutY="458.0" onMouseClicked="#preBtnClick" prefHeight="33.0" prefWidth="116.0" styleClass="labels" text="10 second &lt;" />
+      <CheckBox fx:id="blockCheck" alignment="CENTER" layoutX="13.0" layoutY="192.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="145.0" styleClass="labels" text="Block Comments">
+         <font>
+            <Font size="15.0" />
+         </font></CheckBox>
+      <Button layoutX="25.0" layoutY="555.0" mnemonicParsing="false" onAction="#nextFunc" prefHeight="41.0" prefWidth="135.0" styleClass="otherBtns" text="next">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <Button layoutX="18.0" layoutY="254.0" mnemonicParsing="false" onAction="#addToPlayList" prefHeight="50.0" prefWidth="135.0" styleClass="otherBtns" text="Add to Play List">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <ChoiceBox fx:id="playLists" layoutX="11.0" layoutY="328.0" prefHeight="26.0" prefWidth="110.0" style="-fx-background-color: #CDAEF7;" />
+      <ImageView fx:id="videoPic" fitHeight="150.0" fitWidth="200.0" layoutX="604.0" layoutY="484.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="392.0" layoutY="559.0" mnemonicParsing="false" onAction="#openImage" prefHeight="41.0" prefWidth="135.0" style=": #25D36;" styleClass="otherBtns" text="openImage">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="122.0" layoutY="328.0" mnemonicParsing="false" onAction="#refreshclick" style="-fx-background-color: #cfcfcf;" text="R" />
+   </children>
+</AnchorPane>

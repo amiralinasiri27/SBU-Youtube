@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="647.0" prefWidth="533.0" styleClass="backGrounds" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.youtube.addShortController">
+   <children>
+      <MediaView fx:id="mediaView" fitHeight="285.0" fitWidth="200.0" layoutX="310.0" layoutY="29.0" />
+      <ImageView fx:id="shortPic" fitHeight="150.0" fitWidth="200.0" layoutX="310.0" layoutY="339.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField layoutX="328.0" layoutY="554.0" prefHeight="26.0" prefWidth="164.0" promptText="Short Name" />
+      <Button layoutX="82.0" layoutY="108.0" mnemonicParsing="false" onAction="#addVideo" prefHeight="34.0" prefWidth="106.0" styleClass="otherBtns" text="Add Video" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="82.0" layoutY="397.0" mnemonicParsing="false" onAction="#addImage" prefHeight="34.0" prefWidth="106.0" styleClass="otherBtns" text="Add Image" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="75.0" layoutY="554.0" prefHeight="26.0" prefWidth="134.0" styleClass="labels" text="Name Of Short" />
+      <Slider fx:id="timeSlider" layoutX="310.0" layoutY="307.0" prefHeight="14.0" prefWidth="200.0" />
+      <ImageView fx:id="platImg" fitHeight="41.0" fitWidth="52.0" layoutX="376.0" layoutY="151.0" onMouseClicked="#play" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/icons8-play-50.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pauseImg" fitHeight="41.0" fitWidth="41.0" layoutX="376.0" layoutY="151.0" onMouseClicked="#play" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@Images/icons8-pause-50.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="82.0" layoutY="598.0" mnemonicParsing="false" onAction="#submitFunc" prefHeight="34.0" prefWidth="106.0" styleClass="otherBtns" text="Submit" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

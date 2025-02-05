@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="691.0" prefWidth="599.0" styleClass="backGrounds" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.youtube.ShortViewController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="229.0" layoutX="157.0" layoutY="236.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-height: 100; -fx-arc-width: 100; -fx-fill: #CBC6C6;" width="65.0" />
+      <MediaView fx:id="mediaView" fitHeight="550.0" fitWidth="300.0" layoutX="225.0" layoutY="44.0" onMouseClicked="#mediaViewClickToHidePlayBtn" />
+      <Slider fx:id="timeSlider" layoutX="228.0" layoutY="582.0" prefHeight="24.0" prefWidth="300.0" showTickMarks="true" />
+      <ImageView fx:id="platImg" fitHeight="41.0" fitWidth="52.0" layoutX="355.0" layoutY="278.0" onMouseClicked="#play" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/icons8-play-50.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pauseImg" fitHeight="41.0" fitWidth="41.0" layoutX="355.0" layoutY="277.0" onMouseClicked="#play" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@Images/icons8-pause-50.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="437.0" layoutY="606.0" onMouseClicked="#nextBtnClick" prefHeight="33.0" prefWidth="116.0" styleClass="labels" text="5 second &gt;" />
+      <Label layoutX="228.0" layoutY="606.0" onMouseClicked="#preBtnClick" prefHeight="33.0" prefWidth="116.0" styleClass="labels" text="3 second &lt;" />
+      <Circle fill="#eaece9" layoutX="27.0" layoutY="340.0" onMouseClicked="#nextShortClick" radius="22.0" stroke="BLACK" strokeType="INSIDE" />
+      <ImageView fx:id="notLikedImg" fitHeight="29.0" fitWidth="33.0" layoutX="175.0" layoutY="252.0" onMouseClicked="#likeUnlikeClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/kindpng_114955.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="likedImg" fitHeight="26.0" fitWidth="28.0" layoutX="175.0" layoutY="256.0" onMouseClicked="#likeUnlikeClick" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@Images/kindpng_1293111.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="notDisLikedImg" fitHeight="34.0" fitWidth="33.0" layoutX="173.0" layoutY="366.0" onMouseClicked="#disLikeUnDisLikeClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/show-youtube-dislikes-svgrepo-com.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="disLikedImg" fitHeight="34.0" fitWidth="28.0" layoutX="176.0" layoutY="369.0" onMouseClicked="#disLikeUnDisLikeClick" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@Images/youtube-dislike-png-45967.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="163.0" layoutY="295.0" prefHeight="34.0" prefWidth="51.0" text="Label" />
+      <Label alignment="CENTER" layoutX="163.0" layoutY="406.0" prefHeight="34.0" prefWidth="51.0" text="Label" />
+      <Button layoutX="17.0" layoutY="28.0" mnemonicParsing="false" onAction="#openSongMedia" prefHeight="41.0" prefWidth="47.0" text="openVideo" />
+      <Button layoutX="5.0" layoutY="88.0" mnemonicParsing="false" onAction="#exitBtnClick" prefHeight="41.0" prefWidth="72.0" style="-fx-background-color: #DE0A06;" text="Exit" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

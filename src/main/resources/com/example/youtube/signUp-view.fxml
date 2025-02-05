@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="emailCh" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="676.0" prefWidth="479.0" style="-fx-background-color: #2C2829;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.youtube.Controller.signUpController">
+    <children>
+        <Group layoutX="66.0" layoutY="261.0">
+            <children>
+                <TextField fx:id="emailField" layoutY="11.0" onAction="#emailFieldClick" onMouseClicked="#emailFieldClick" prefHeight="42.0" prefWidth="333.0" style="-fx-border-radius: 6; -fx-background-color: #2C2829; -fx-text-inner-color: #ffff;" />
+                <Label fx:id="email" alignment="CENTER" layoutX="-1.0" prefHeight="22.0" prefWidth="88.0" style="-fx-background-color: #2C2829;" text="Email " textFill="#4de4ff">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="passwordField" layoutY="95.0" onAction="#passwordFieldClick" onMouseClicked="#passwordFieldClick" prefHeight="42.0" prefWidth="333.0" style="-fx-border-radius: 6; -fx-background-color: #2C2829; -fx-text-inner-color: #ffffff;" />
+                <Label fx:id="passWord" layoutX="25.0" layoutY="77.0" text="Password" textFill="#4de4ff" />
+                <TextField fx:id="secondPasswordField" layoutY="186.0" onAction="#secondPasswordFieldClick" onMouseClicked="#secondPasswordFieldClick" prefHeight="42.0" prefWidth="333.0" style="-fx-border-radius: 6; -fx-background-color: #2C2829; -fx-text-inner-color: #ffffff;" />
+                <Label fx:id="Passagain" layoutX="25.0" layoutY="168.0" text="Password again" textFill="#4de4ff" />
+            <Label fx:id="error" layoutX="26.0" layoutY="60.0" textFill="RED" visible="false" />
+            <Label fx:id="errorEmail" layoutX="22.0" layoutY="-19.0" textFill="RED" />
+            <Label fx:id="errorUserName" layoutX="32.0" layoutY="142.0" textFill="RED" visible="false" />
+            </children>
+        </Group>
+        <Button fx:id="next" layoutX="329.0" layoutY="555.0" mnemonicParsing="false" onAction="#endOfSignUp" prefHeight="42.0" prefWidth="82.0" style="-fx-background-color: #2C2829; -fx-background-radius: 15;" text="next" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <VBox alignment="CENTER" layoutX="140.0" layoutY="41.0" prefHeight="210.0" prefWidth="198.0">
+            <children>
+                <ImageView fitHeight="93.0" fitWidth="356.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Images/hhh.png" />
+                    </image>
+                </ImageView>
+                <Label alignment="CENTER" prefHeight="58.0" prefWidth="146.0" text="Sign Up" textFill="WHITE">
+                    <font>
+                        <Font size="35.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" prefHeight="36.0" prefWidth="199.0" text="Continue To YouTube" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+        <Button fx:id="Continue" layoutX="66.0" layoutY="555.0" mnemonicParsing="false" onAction="#endOfSignUp" prefHeight="42.0" prefWidth="124.0" style="-fx-background-color: #2C2829; -fx-background-radius: 15;" text="Continue" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <Label layoutX="44.0" layoutY="289.0" text="*" textFill="RED" visible="false">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Button fx:id="Login" layoutX="190.0" layoutY="555.0" mnemonicParsing="false" onAction="#endOfSignUp" prefHeight="42.0" prefWidth="124.0" style="-fx-background-color: #2C2829; -fx-background-radius: 15;" text="Login" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+      <Label fx:id="con" layoutX="385.0" layoutY="216.0" textFill="RED" />
+    </children>
+</AnchorPane>

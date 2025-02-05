@@ -1,0 +1,46 @@
+.buttons {
+    -fx-background-color: buttonsBgColor;
+}
+.labels {
+    -fx-background-color: labelsBgColor;
+    -fx-text-fill: textsColor;
+}
+.backGrounds {
+    -fx-background-color: PanesBgColor;
+    -fx-border-color: PanesBgColor;
+}
+#topBar {
+    -fx-fill: #E5E3E3;
+    -fx-stroke: #E5E3E3;
+}
+#searchBar {
+    -fx-text-inner-color: #000;
+    -fx-background-color: #E5E3E3;
+    -fx-border-color: #000;
+    -fx-border-radius: 15;
+}
+.root {
+    buttonsBgColor: #FFF;
+    labelsBgColor: #FFF;
+    PanesBgColor: #FFF;
+    textsColor: #000;
+    SvgColor: #000;
+    SvgParebts: #000;
+}
+.buttons > SVGPath {
+    -fx-fill: SvgParebts;
+    -fx-stroke: SvgColor;
+}
+.rectangles {
+    -fx-fill: #FFF;
+    -fx-stroke: #fff;
+}
+.scrolPanes {
+    -fx-background-color: #fff;
+    -fx-border-color: #fff;
+}
+.otherBtns {
+    -fx-background-color: #CC1604;
+    -fx-text-fill: #fff;
+    -fx-background-radius: 23;
+}

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="648.0" prefWidth="1155.0" style="-fx-background-color: #272424;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.youtube.HelloController">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#272424" height="515.0" layoutX="21.0" layoutY="61.0" stroke="#272424" strokeType="INSIDE" width="197.0" />
+
+        <AnchorPane fx:id="sideBar" layoutX="25.0" layoutY="51.0" prefHeight="562.0" prefWidth="197.0" visible="false">
+            <children>
+                <Rectangle fx:id="productsBackGround" arcHeight="5.0" arcWidth="5.0" fill="#272424" height="37.0" layoutX="-1.0" layoutY="470.0" stroke="#272424" strokeType="INSIDE" style="-fx-arc-width: 30; -fx-arc-height: 30;" width="197.0" />
+                <Rectangle fx:id="sportsBackGround" arcHeight="5.0" arcWidth="5.0" fill="#272424" height="37.0" layoutX="-1.0" layoutY="431.0" stroke="#272424" strokeType="INSIDE" style="-fx-arc-width: 30; -fx-arc-height: 30;" width="197.0" />
+                <Rectangle fx:id="newsBackGround" arcHeight="5.0" arcWidth="5.0" fill="#272424" height="37.0" layoutX="3.0" layoutY="399.0" stroke="#272424" strokeType="INSIDE" style="-fx-arc-width: 30; -fx-arc-height: 30;" width="197.0" />
+                <Rectangle fx:id="gamingBackGround" arcHeight="5.0" arcWidth="5.0" fill="#272424" height="37.0" layoutX="-1.0" layoutY="372.0" stroke="#272424" strokeType="INSIDE" style="-fx-arc-width: 30; -fx-arc-height: 30;" width="197.0" />
+                <Rectangle fx:id="musicBackGround" arcHeight="5.0" arcWidth="5.0" fill="#272424" height="37.0" layoutX="5.0" layoutY="346.0" stroke="#272424" strokeType="INSIDE" style="-fx-arc-width: 30; -fx-arc-height: 30;" width="197.0" />
+                <Rectangle fx:id="TrendingBackGround" arcHeight="5.0" arcWidth="5.0" fill="#272424" height="37.0" layoutX="-1.0" layoutY="313.0" stroke="#272424" strokeType="INSIDE" style="-fx-arc-width: 30; -fx-arc-height: 30;" width="197.0" />
+                <Rectangle fx:id="likedVideosBackGround" arcHeight="5.0" arcWidth="5.0" fill="#272424" height="37.0" layoutY="239.0" stroke="#272424" strokeType="INSIDE" style="-fx-arc-width: 30; -fx-arc-height: 30;" width="197.0" />
+                <Rectangle fx:id="watchLaterBackGround" arcHeight="5.0" arcWidth="5.0" fill="#272424" height="37.0" layoutX="-1.0" layoutY="201.0" stroke="#272424" strokeType="INSIDE" style="-fx-arc-width: 30; -fx-arc-height: 30;" width="197.0" />
+                <Rectangle fx:id="playListsBackGround" arcHeight="5.0" arcWidth="5.0" fill="#272424" height="37.0" layoutY="165.0" stroke="#272424" strokeType="INSIDE" style="-fx-arc-width: 30; -fx-arc-height: 30;" width="197.0" />
+                <Rectangle fx:id="shortBackGround" arcHeight="5.0" arcWidth="5.0" fill="#272424" height="37.0" layoutX="-1.0" layoutY="45.0" stroke="#272424" strokeType="INSIDE" style="-fx-arc-width: 30; -fx-arc-height: 30;" width="197.0" />
+                <Rectangle fx:id="subscriptionBackGround" arcHeight="5.0" arcWidth="5.0" fill="#272424" height="37.0" layoutY="9.0" stroke="#272424" strokeType="INSIDE" style="-fx-arc-width: 30; -fx-arc-height: 30;" width="197.0" />
+                <Rectangle fx:id="historyBackGround" arcHeight="5.0" arcWidth="5.0" fill="#272424" height="37.0" layoutX="-1.0" layoutY="78.0" stroke="#272424" strokeType="INSIDE" style="-fx-arc-width: 30; -fx-arc-height: 30;" width="197.0" />
+                <Rectangle fx:id="homeBackGround" arcHeight="5.0" arcWidth="5.0" fill="#272424" height="37.0" layoutY="130.0" stroke="#272424" strokeType="INSIDE" style="-fx-arc-width: 30; -fx-arc-height: 30;" width="197.0" />
+                <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="13.0" layoutY="475.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Images/darkImages/svgexport-35.png" />
+                    </image>
+                </ImageView>
+                <Line endX="86.99998474121094" layoutX="105.0" layoutY="122.0" startX="-100.0" stroke="#9e9e9e" />
+                <Label fx:id="subscription" layoutX="66.0" layoutY="83.0" prefHeight="26.0" prefWidth="65.0" text="Subscription" textFill="WHITE">
+                    <font>
+                        <Font size="11.0" />
+                    </font>
+                </Label>
+                <Label fx:id="home" layoutX="66.0" layoutY="14.0" prefHeight="26.0" prefWidth="65.0" text="Home" textFill="WHITE" />
+                <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="13.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Images/darkImages/svgexport-19.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="13.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Images/darkImages/svgexport-21.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="13.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Images/darkImages/svgexport-24.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="13.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Images/darkImages/svgexport-26.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="13.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Images/darkImages/svgexport-27.png" />
+                    </image>
+                </ImageView>
+                <Label fx:id="music" layoutX="66.0" layoutY="351.0" prefHeight="26.0" prefWidth="65.0" text="Music" textFill="WHITE" />
+                <Label fx:id="shortL" layoutX="66.0" layoutY="50.0" prefHeight="26.0" prefWidth="65.0" text="Shorts" textFill="WHITE" />
+                <Label fx:id="history" layoutX="66.0" layoutY="135.0" prefHeight="26.0" prefWidth="65.0" text="History" textFill="WHITE" />
+                <Label fx:id="podcast" layoutX="66.0" layoutY="475.0" prefHeight="26.0" prefWidth="65.0" text="Podcasts" textFill="WHITE" />
+                <Label fx:id="likedVideos" layoutX="66.0" layoutY="245.0" prefHeight="26.0" prefWidth="65.0" text="Liked videos" textFill="WHITE" />
+                <Label fx:id="watchLater" layoutX="66.0" layoutY="206.0" prefHeight="26.0" prefWidth="65.0" text="Watch later" textFill="WHITE" />
+                <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="13.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Images/darkImages/svgexport-29.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="13.0" layoutY="351.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Images/darkImages/svgexport-30.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="13.0" layoutY="377.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Images/darkImages/svgexport-32.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="13.0" layoutY="404.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Images/darkImages/svgexport-33.png" />
+                    </image>
+                </ImageView>
+                <Label fx:id="gaming" layoutX="65.0" layoutY="377.0" prefHeight="26.0" prefWidth="65.0" text="Gaming" textFill="WHITE" />
+                <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="13.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Images/darkImages/svgexport-25.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="13.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Images/darkImages/svgexport-20.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="13.0" layoutY="437.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Images/darkImages/svgexport-34.png" />
+                    </image>
+                </ImageView>
+                <Label fx:id="playlist" layoutX="66.0" layoutY="170.0" prefHeight="26.0" prefWidth="65.0" text="Playlists" textFill="WHITE" />
+                <Label fx:id="news" layoutX="66.0" layoutY="403.0" prefHeight="26.0" prefWidth="65.0" text="News" textFill="WHITE" />
+                <Label fx:id="sports" layoutX="65.0" layoutY="436.0" prefHeight="26.0" prefWidth="65.0" text="Sports" textFill="WHITE" />
+                <Label layoutX="15.0" layoutY="281.0" prefHeight="26.0" prefWidth="102.0" text="Explor" textFill="WHITE">
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                </Label>
+                <Line endX="86.99998474121094" layoutX="105.0" layoutY="280.0" startX="-100.0" stroke="#9e9e9e" />
+                <Label fx:id="trending" layoutX="66.0" layoutY="318.0" prefHeight="26.0" prefWidth="65.0" text="Trending" textFill="WHITE" />
+                <Rectangle fx:id="settingBackGround" arcHeight="5.0" arcWidth="5.0" fill="#272424" height="37.0" layoutX="3.0" layoutY="511.0" onMouseClicked="#settingClick" stroke="#272424" strokeType="INSIDE" style="-fx-arc-width: 30; -fx-arc-height: 30;" width="197.0" />
+                <Line endX="86.99998474121094" layoutX="110.0" layoutY="507.0" startX="-100.0" stroke="#9e9e9e" />
+                <Label fx:id="setting" layoutX="65.0" layoutY="516.0" prefHeight="26.0" prefWidth="65.0" text="Setting" textFill="WHITE" />
+            </children>
+        </AnchorPane>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#272424" height="34.0" layoutX="2.0" layoutY="16.0" stroke="#272424" strokeType="INSIDE" width="933.0" />
+        <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="45.0" layoutY="19.0" onMouseClicked="#sideBarBtnClick" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Images/darkImages/svgexport-4.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="26.0" fitWidth="66.0" layoutX="87.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Images/darkImages/svgexport-7.png" />
+            </image>
+        </ImageView>
+        <TextField layoutX="267.0" layoutY="12.0" prefHeight="37.0" prefWidth="402.0" promptText="Search" style="-fx-background-color: #272424; -fx-text-inner-color: #fff;">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </TextField>
+        <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="241.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Images/darkImages/svgexport-11.png" />
+            </image>
+        </ImageView>
+        <AnchorPane fx:id="firstSideBar" layoutX="30.0" layoutY="65.0" prefHeight="292.0" prefWidth="46.0">
+            <children>
+                <ImageView fitHeight="35.0" fitWidth="34.0" layoutX="6.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Images/darkImages/svgexport-19.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="8.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Images/darkImages/svgexport-20.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="37.0" fitWidth="34.0" layoutX="6.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Images/darkImages/svgexport-21.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="37.0" fitWidth="34.0" layoutX="6.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Images/darkImages/svgexport-22.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="7.0" layoutY="48.0" text="Home" textFill="WHITE" />
+                <Label layoutX="7.0" layoutY="110.0" text="Shorts" textFill="WHITE" />
+                <Label layoutX="-10.0" layoutY="170.0" text="Subscription" textFill="WHITE" />
+                <Label layoutX="13.0" layoutY="230.0" text="You" textFill="WHITE" />
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="settingSideBar" layoutX="36.0" layoutY="65.0" prefHeight="533.0" prefWidth="208.0" visible="false">
+            <children>
+                <Label layoutX="10.0" layoutY="8.0" prefHeight="63.0" prefWidth="188.0" text="Setting" textFill="WHITE">
+                    <font>
+                        <Font size="42.0" />
+                    </font>
+                </Label>
+                <Label layoutX="14.0" layoutY="80.0" prefHeight="37.0" prefWidth="181.0" text="Account" textFill="WHITE">
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                </Label>
+                <Label layoutX="13.0" layoutY="130.0" prefHeight="37.0" prefWidth="181.0" text="Notifications" textFill="WHITE">
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                </Label>
+                <Label layoutX="13.0" layoutY="177.0" prefHeight="37.0" prefWidth="181.0" text="Playback and performance" textFill="WHITE">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Label>
+                <Label layoutX="14.0" layoutY="229.0" prefHeight="37.0" prefWidth="181.0" text="Downloads" textFill="WHITE">
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                </Label>
+                <Label layoutX="14.0" layoutY="281.0" prefHeight="37.0" prefWidth="181.0" text="Privacy" textFill="WHITE">
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                </Label>
+                <Label layoutX="14.0" layoutY="329.0" prefHeight="37.0" prefWidth="181.0" text="Related programs" textFill="WHITE">
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                </Label>
+                <Label layoutX="14.0" layoutY="377.0" prefHeight="37.0" prefWidth="181.0" text="advanced settings" textFill="WHITE">
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="videoView" layoutX="144.0" layoutY="66.0" onMouseClicked="#mediaViewClickToHidePlayBtn" prefHeight="524.0" prefWidth="1029.0">
+            <children>
+                <MediaView fx:id="mediaView" fitHeight="400.0" fitWidth="600.0" layoutX="215.0" layoutY="34.0" />
+                <Slider fx:id="timeSlider" layoutX="215.0" layoutY="434.0" prefHeight="18.0" prefWidth="600.0" showTickMarks="true" />
+                <Button layoutX="78.0" layoutY="34.0" mnemonicParsing="false" onAction="#openSongMedia" text="openVideo" />
+                <ImageView fx:id="platImg" fitHeight="41.0" fitWidth="52.0" layoutX="494.0" layoutY="214.0" onMouseClicked="#play" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Images/darkImages/icons8-play-50%20(1).png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="pauseImg" fitHeight="41.0" fitWidth="41.0" layoutX="494.0" layoutY="213.0" onMouseClicked="#play" pickOnBounds="true" preserveRatio="true" visible="false">
+                    <image>
+                        <Image url="@Images/darkImages/icons8-pause-50%20(1).png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="311.0" layoutY="458.0" onMouseClicked="#nextBtnClick" prefHeight="33.0" prefWidth="116.0" text="15 second &gt;" textFill="WHITE" />
+                <Label layoutX="215.0" layoutY="458.0" onMouseClicked="#preBtnClick" prefHeight="33.0" prefWidth="116.0" text="10 second &lt;" textFill="WHITE" />
+            </children>
+        </AnchorPane>
+        <ScrollPane fx:id="videos" layoutX="121.0" layoutY="66.0" prefHeight="562.0" prefWidth="1056.0" style="-fx-background-color: #000;">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="563.0" prefWidth="1054.0">
+                    <children>
+                        <HBox prefHeight="177.0" prefWidth="1030.0" spacing="20.0">
+                            <children>
+                                <ImageView fitHeight="178.0" fitWidth="234.0" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fitHeight="178.0" fitWidth="234.0" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fitHeight="178.0" fitWidth="234.0" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fitHeight="178.0" fitWidth="234.0" pickOnBounds="true" preserveRatio="true" />
+                            </children>
+                        </HBox>
+                        <HBox layoutY="184.0" prefHeight="177.0" prefWidth="1030.0" spacing="20.0">
+                            <children>
+                                <ImageView fitHeight="178.0" fitWidth="234.0" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fitHeight="178.0" fitWidth="234.0" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fitHeight="178.0" fitWidth="234.0" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fitHeight="178.0" fitWidth="234.0" pickOnBounds="true" preserveRatio="true" />
+                            </children>
+                        </HBox>
+                        <HBox layoutX="12.0" layoutY="370.0" prefHeight="177.0" prefWidth="1030.0" spacing="20.0">
+                            <children>
+                                <ImageView fitHeight="178.0" fitWidth="234.0" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fitHeight="178.0" fitWidth="234.0" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fitHeight="178.0" fitWidth="234.0" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fitHeight="178.0" fitWidth="234.0" pickOnBounds="true" preserveRatio="true" />
+                            </children>
+                        </HBox>
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+    </children>
+
+</AnchorPane>
